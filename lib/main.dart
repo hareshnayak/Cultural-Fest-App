@@ -30,7 +30,7 @@ class MyApp extends StatelessWidget {
           displayColor: Colors.white,
         ),
       ),
-      home: SignUpPage(),
+      home: RootPage(),
       // MyHomePage(title: 'Flutter Demo Home Page'),
     );
   }

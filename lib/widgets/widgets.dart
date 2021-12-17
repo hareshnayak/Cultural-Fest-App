@@ -1,3 +1,4 @@
+import 'package:engifest_22/screens/login.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -10,6 +11,8 @@ class Button extends StatelessWidget {
 
   Button(this.context, this.image, this.text, this.backColor, this.callback);
 
+
+
   @override
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
@@ -21,7 +24,9 @@ class Button extends StatelessWidget {
         color: backColor,
       ),
       child: InkWell(
-        onTap: callback,
+        onTap: (){
+          Navigator.of(context).push(MaterialPageRoute(builder: (context) => LoginPage()));
+        },
         child: Row(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
