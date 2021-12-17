@@ -25,10 +25,23 @@ class _LoginPageState extends State<LoginPage> {
         padding: EdgeInsets.symmetric(horizontal: size.width*0.08),
         child: Column(
           children: [
-            Container(child: Text('Login with email'),),
+            Container(
+              alignment: Alignment.bottomLeft,
+              height: size.height*0.15,
+              margin: EdgeInsets.fromLTRB(0,size.height*0.15,0,size.height*0.05),
+              child: Image.asset('assets/images/engi_logo.png'),
+            ),
+            Container(child: Text('Login with email', style: TextStyle(fontWeight: FontWeight.bold, fontSize: 25),),),
             Padding(
-              padding: const EdgeInsets.fromLTRB(0,20,0,0 ),
-              child: Center(child: Button(context,'','Login with email',colors.buttonGreen,auth.loginEmail)),
+              padding: const EdgeInsets.only(top:30.0),
+              child: editText(context,'Email', Text(''),),
+            ),
+            Padding(
+                padding: const EdgeInsets.only(top:20.0),
+                child: editText(context,'Password', Text(''),)),
+            Padding(
+              padding: const EdgeInsets.fromLTRB(0,40,0,0 ),
+              child: Center(child: Button(context,'','Login',colors.buttonGreen,auth.loginEmail)),
             ),
             InkWell(
               onTap: forgotPass,
