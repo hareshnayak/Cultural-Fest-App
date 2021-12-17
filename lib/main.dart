@@ -1,6 +1,7 @@
 import 'package:engifest_22/helper/colors.dart';
 import 'package:engifest_22/screens/login.dart';
 import 'package:engifest_22/screens/root.dart';
+import 'package:engifest_22/screens/signUp.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -29,7 +30,7 @@ class MyApp extends StatelessWidget {
           displayColor: Colors.white,
         ),
       ),
-      home: LoginPage(),
+      home: SignUpPage(),
       // MyHomePage(title: 'Flutter Demo Home Page'),
     );
   }

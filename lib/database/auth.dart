@@ -1,6 +1,7 @@
-class Auth{
-  void loginGoogle(){
+class Auth {
+  void loginGoogle() {}
 
-  }
-  void loginEmail(){}
+  void loginEmail() {}
+
+  void signUpEmail() {}
 }

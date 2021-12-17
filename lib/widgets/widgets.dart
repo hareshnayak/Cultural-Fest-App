@@ -52,7 +52,7 @@ Widget editText(BuildContext context, String name, Widget child) {
       children: [
         Text(name),
         Container(
-          margin: EdgeInsets.fromLTRB(0,5, 0, 0),
+          margin: EdgeInsets.fromLTRB(0, 5, 0, 0),
           height: size.height * 0.08,
           width: size.width,
           decoration: BoxDecoration(

@@ -27,8 +27,9 @@ class RootPage extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.center,
           children: <Widget>[
             Container(
-              height: size.height*0.2,
-              margin: EdgeInsets.fromLTRB(0,size.height*0.15,0,size.height*0.05),
+              height: size.height * 0.2,
+              margin: EdgeInsets.fromLTRB(
+                  0, size.height * 0.15, 0, size.height * 0.05),
               child: Image.asset('assets/images/engi_logo.png'),
             ),
             Container(
