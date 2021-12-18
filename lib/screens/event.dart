@@ -67,9 +67,11 @@ class EventPage extends StatelessWidget {
                   ),
                 ),
                 Container(
+                  padding: EdgeInsets.symmetric(vertical: 10,horizontal: 20
+                  ),
                   height: size.height * 0.5,
-                  color: Colors.grey,
-                  child: Text('about'),
+                  color: Colors.transparent,
+                  child: Text('Hardavinder Singh "Harrdy" Sandhu, is an Indian singer, actor and former cricketer.[2] His first song was Tequilla Shot, and he gained popularity with Soch (2013) and Joker (2014), which were written by Jaani and music composed by B Praak .\n\n Hardavinder Singh "Harrdy" Sandhu, is an Indian singer, actor and former cricketer.[2] His first song was Tequilla Shot, and he gained popularity with Soch (2013) and Joker (2014), which were written by Jaani and music composed by B Praak .'),
                 )
               ],
             ),
@@ -83,7 +85,7 @@ class EventPage extends StatelessWidget {
                       decoration: BoxDecoration(
                         gradient: LinearGradient(
                           begin: Alignment.bottomCenter,
-                          end: Alignment(0,-1),
+                          end: Alignment(0,-3),
                           colors: <Color>[
                             AppColors().backColor,
                             Color(0x00000000)
@@ -97,7 +99,7 @@ class EventPage extends StatelessWidget {
                       alignment: Alignment.bottomCenter,
                       width: size.width * 0.9,
                       child: Button(context, '', 'Book Ticket',
-                          AppColors().buttonGreen, confirm, '/downloadTicket'),
+                          AppColors().buttonGreen, confirm, '/confirmTicket'),
                     ),),
                   ],
                 ),

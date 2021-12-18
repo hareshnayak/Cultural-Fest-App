@@ -1,3 +1,4 @@
+import 'package:engifest_22/helper/colors.dart';
 import 'package:engifest_22/widgets/widgets.dart';
 import 'package:flutter/material.dart';
 
@@ -58,6 +59,10 @@ class _HomePageState extends State<HomePage> {
             height: size.height*0.44,
             width: size.width,
             margin: EdgeInsets.fromLTRB(0, 10, 0,0),
+            decoration: BoxDecoration(
+              color: AppColors().secBackColor,
+              borderRadius: BorderRadius.all(Radius.circular(20))
+            ),
             child: ListView(
               scrollDirection: Axis.vertical,
               children: [
