@@ -111,32 +111,37 @@ class _FilterButtonState extends State<FilterButton> {
 Widget event(BuildContext context, String title, String subtitle){
   void navigate(){}
   Size size = MediaQuery.of(context).size;
-  return Container(
-    height: size.height*0.1,
-    padding: EdgeInsets.all(10),
-    child:Row(children: [
-      Container(
-        height: size.height*0.07,
-        width: size.height*0.07,
-        color: Colors.grey,
-      ),
-      SizedBox(width: 20,),
-      Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-        Text(title, style: Theme.of(context).textTheme.headline6),
-        Text(subtitle),
-      ],),Spacer(),
-      Container(
-        height: size.height*0.06,
-        width: size.width*0.3,
-        decoration: BoxDecoration(
-          // border: Border.all(color:Colors.white),
-          borderRadius: BorderRadius.all(Radius.circular(10))
+  return InkWell(
+    onTap: (){
+      Navigator.of(context).pushNamed('/event');
+    },
+    child: Container(
+      height: size.height*0.1,
+      padding: EdgeInsets.all(10),
+      child:Row(children: [
+        Container(
+          height: size.height*0.07,
+          width: size.height*0.07,
+          color: Colors.grey,
         ),
-        child: Button(context,'','BOOK',AppColors().googleBlue,navigate,'/event'),
-      )
-    ],)
+        SizedBox(width: 20,),
+        Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+          Text(title, style: Theme.of(context).textTheme.headline6),
+          Text(subtitle),
+        ],),Spacer(),
+        Container(
+          height: size.height*0.06,
+          width: size.width*0.3,
+          decoration: BoxDecoration(
+            // border: Border.all(color:Colors.white),
+            borderRadius: BorderRadius.all(Radius.circular(10))
+          ),
+          child: Button(context,'','BOOK',AppColors().googleBlue,navigate,'/event'),
+        )
+      ],)
+    ),
   );
 }
 

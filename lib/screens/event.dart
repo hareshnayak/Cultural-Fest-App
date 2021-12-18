@@ -97,7 +97,7 @@ class EventPage extends StatelessWidget {
                       alignment: Alignment.bottomCenter,
                       width: size.width * 0.9,
                       child: Button(context, '', 'Book Ticket',
-                          AppColors().buttonGreen, confirm, '/confirm'),
+                          AppColors().buttonGreen, confirm, '/downloadTicket'),
                     ),),
                   ],
                 ),

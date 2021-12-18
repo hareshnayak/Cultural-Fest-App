@@ -1,4 +1,6 @@
 import 'package:engifest_22/helper/colors.dart';
+import 'package:engifest_22/screens/confirmTicket.dart';
+import 'package:engifest_22/screens/downloadTicket.dart';
 import 'package:engifest_22/screens/event.dart';
 import 'package:engifest_22/screens/home.dart';
 import 'package:engifest_22/screens/login.dart';
@@ -43,6 +45,8 @@ class MyApp extends StatelessWidget {
         '/signUp': (context) => SignUpPage(),
         '/home': (context) => HomePage(),
         '/event': (context) => EventPage(),
+        '/confirm': (context) => ConfirmTicket(),
+        '/downloadTicket' : (context) => DownloadTicket(),
       },
 
       // home: RootPage(),
