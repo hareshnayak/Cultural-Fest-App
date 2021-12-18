@@ -16,6 +16,7 @@ class _HomePageState extends State<HomePage> {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.transparent,
+        elevation: 0,
         title: Text('Engifest 2022'),
       ),
       body: Column(

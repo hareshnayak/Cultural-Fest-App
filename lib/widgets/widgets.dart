@@ -131,10 +131,10 @@ Widget event(BuildContext context, String title, String subtitle){
         height: size.height*0.06,
         width: size.width*0.3,
         decoration: BoxDecoration(
-          border: Border.all(color:Colors.white),
+          // border: Border.all(color:Colors.white),
           borderRadius: BorderRadius.all(Radius.circular(10))
         ),
-        child: Button(context,'','BOOK',Colors.transparent,navigate,'/event'),
+        child: Button(context,'','BOOK',AppColors().googleBlue,navigate,'/event'),
       )
     ],)
   );
