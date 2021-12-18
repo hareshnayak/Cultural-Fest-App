@@ -39,14 +39,14 @@ class RootPage extends StatelessWidget {
               padding: const EdgeInsets.fromLTRB(0, 10, 0, 0),
               child: Center(
                 child: Button(context, 'assets/images/google_icon.png',
-                    'Login with Google', colors.googleBlue, auth.loginGoogle),
+                    'Login with Google', colors.googleBlue, auth.loginGoogle,''),
               ),
             ),
             Padding(
               padding: const EdgeInsets.fromLTRB(0, 20, 0, 0),
               child: Center(
                   child: Button(context, '', 'Login with email',
-                      colors.buttonGreen, navigateToLogin)),
+                      colors.buttonGreen, navigateToLogin,'/login')),
             ),
             InkWell(
               onTap: () {

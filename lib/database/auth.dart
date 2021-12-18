@@ -4,4 +4,5 @@ class Auth {
   void loginEmail() {}
 
   void signUpEmail() {}
+  bool loggedIn() {return true;}
 }

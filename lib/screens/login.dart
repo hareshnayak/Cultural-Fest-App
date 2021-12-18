@@ -56,7 +56,7 @@ class _LoginPageState extends State<LoginPage> {
               padding: const EdgeInsets.fromLTRB(0, 40, 0, 0),
               child: Center(
                   child: Button(context, '', 'Login', colors.buttonGreen,
-                      auth.loginEmail)),
+                      auth.loginEmail,'/home')),
             ),
             InkWell(
               onTap: forgotPass,

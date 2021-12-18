@@ -1,8 +1,12 @@
 import 'package:engifest_22/helper/colors.dart';
+import 'package:engifest_22/screens/event.dart';
+import 'package:engifest_22/screens/home.dart';
 import 'package:engifest_22/screens/login.dart';
 import 'package:engifest_22/screens/root.dart';
 import 'package:engifest_22/screens/signUp.dart';
 import 'package:flutter/material.dart';
+
+import 'database/auth.dart';
 
 void main() {
   runApp(MyApp());
@@ -11,6 +15,8 @@ void main() {
 class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   final AppColors colors = AppColors();
+  final Auth auth = Auth();
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -30,7 +36,16 @@ class MyApp extends StatelessWidget {
           displayColor: Colors.white,
         ),
       ),
-      home: RootPage(),
+      initialRoute: (auth.loggedIn) != null ? '/home' : '/',
+      routes: {
+        '/': (context) => RootPage(),
+        '/login': (context) => LoginPage(),
+        '/signUp': (context) => SignUpPage(),
+        '/home': (context) => HomePage(),
+        '/event': (context) => EventPage(),
+      },
+
+      // home: RootPage(),
       // MyHomePage(title: 'Flutter Demo Home Page'),
     );
   }

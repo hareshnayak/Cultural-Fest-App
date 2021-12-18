@@ -64,7 +64,7 @@ class _SignUpPageState extends State<SignUpPage> {
               padding: const EdgeInsets.fromLTRB(0, 40, 0, 0),
               child: Center(
                   child: Button(context, '', 'Sign Up', colors.buttonGreen,
-                      auth.signUpEmail)),
+                      auth.signUpEmail,'/home')),
             ),
           ],
         ),
