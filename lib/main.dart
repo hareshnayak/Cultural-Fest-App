@@ -53,7 +53,8 @@ class _MyAppState extends State<MyApp> {
           displayColor: Colors.white,
         ),
       ),
-      initialRoute: (auth.loggedIn) != null ? '/home' : '/',
+      // initialRoute: (auth.loggedIn) != null ? '/home' : '/',
+      initialRoute: '/confirmTicket',
       routes: {
         '/': (context) => RootPage(),
         '/login': (context) => LoginPage(),

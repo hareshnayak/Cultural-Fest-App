@@ -1,6 +1,8 @@
 import 'package:engifest_22/helper/colors.dart';
 import 'package:engifest_22/widgets/widgets.dart';
 import 'package:flutter/cupertino.dart';
+import 'package:pdf/pdf.dart';
+import 'package:pdf/widgets.dart' as pw;
 import 'package:flutter/material.dart';
 
 class DownloadTicket extends StatelessWidget {
@@ -9,7 +11,10 @@ class DownloadTicket extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
-    void downloadTicket(){}
+
+    void downloadTicket(){
+
+    }
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.transparent,
