@@ -154,6 +154,7 @@ Widget editText(BuildContext context, String name, Widget child) {
         Text(name),
         Container(
           margin: EdgeInsets.fromLTRB(0, 5, 0, 0),
+          padding: EdgeInsets.fromLTRB(10, 5, 0, 0),
           height: size.height * 0.08,
           width: size.width,
           decoration: BoxDecoration(
